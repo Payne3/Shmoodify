@@ -1,6 +1,6 @@
 {
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
+  font-family: Russo One, sans-serif;
 }
 
 html,
@@ -44,7 +44,7 @@ body {
 }
 
 /* This CSS styles the ufo icon in the navbar */
-.nav-ufo {
+.nav-music {
   position: absolute;
   bottom: 5px;
   left: 150px;
