@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page
 .wrapper {
   position: static;
@@ -81,7 +89,7 @@ select {
   height: 550px;
   margin: 0;
   background: black;
-  background-image: url("https://www.youtube.com/embed/8t3XYNxnUBs");
+  background-image: url("");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
