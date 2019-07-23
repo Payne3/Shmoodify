@@ -29,34 +29,37 @@
       <p>click a button to generate a playlist</p>
       <div class="row">
         <div class="column">
-          <button type="button" class="btn btn-primary btn-lg btn-block" id="love button"
-            style="border-radius: 25px; color: red">Love</button>
+          <div class="col text-center">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="love button"
+              style="border-radius: 25px; color: white">Love</button>
 
-          <button type="button" class="btn btn-primary btn-lg btn-block" id="saucy button"
-            style="border-radius: 25px; color: purple">Saucy</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="saucy button"
+              style="border-radius: 25px; color: white">Saucy</button>
 
-          <button type="button" class="btn btn-primary btn-lg btn-block" id="dance button"
-            style="border-radius: 25px; color: green">Dance</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="dance button"
+              style="border-radius: 25px; color: white">Dance</button>
 
-          <button type="button" class="btn btn-primary btn-lg btn-block" id="sad button"
-            style="border-radius: 25px; color: blue">Sad</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="sad button"
+              style="border-radius: 25px; color: white">Sad</button>
 
-          <button type="button" class="btn btn-primary btn-lg btn-block" id="angry button"
-            style="border-radius: 25px">Angry</button>
-
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="angry button"
+              style="border-radius: 25px; color: white">Angry</button>
+          </div>
         </div>
         <div class="column">
-          <p>song 1</p>
-          <p>song 2</p>
-          <p>song 3</p>
-          <p>song 4</p>
-          <p>song 5</p>
-          <p>song 6</p>
-          <p>song 7</p>
-          <p>song 8</p>
-          <p>song 9</p>
-          <p>song 10</p>
-
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Title</th>
+                  <th class="table-head">Artist</th>
+                  <th class="table-head">Year</th>
+                  <th class="table-head">Genre</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
       </div>
       <!-- TOOK OUT THE TABLE BUT COULD BE USEFUL LATER. SO I LEFT IT COMMENTED OUT BUT STILL THERE. -->
