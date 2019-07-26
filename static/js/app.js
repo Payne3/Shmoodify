@@ -9,21 +9,37 @@ function loveButton() {
     d3.selectAll("td").remove();
 
     var filteredData = tableData.filter(record => record.Schmood == 'love')
+
+    function random10(array) {
+
+        var test = array[Math.floor(Math.random() * array.length)];
+        return test; 
+        
+    }
+
+    var randomData = []; 
+    var i;
+    for (i = 0; i < 11; i++) {
+        random = random10(filteredData)
+        randomData = randomData.concat(random); 
+    }
     
-    filteredData.forEach(function(filteredData) {
+    console.log(randomData)
+
+    randomData.forEach(function (randomData) {
 
         // Append a row to the table body for every UFO report
         var row = tbody.append("tr");
-     
+
         // For each pair of keys and values in each UFO report...
-        Object.entries(filteredData).forEach(function([key, value]) {
-            
+        Object.entries(randomData).forEach(function ([key, value]) {
+
             // Append a data column (cell) to the row and enter the corresponding value in each cell.
             var cell = tbody.append("td");
             cell.text(value);
         });
-      });
-    console.log(filteredData);
+    });
+    console.log(randomData);
 };
 
 
