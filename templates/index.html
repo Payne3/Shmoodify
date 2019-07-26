@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shmoooooodify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel=" stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Shmooooodify
+            <img class="nav-music" src="static/Images/music.png">
+            <div>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+              </li>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>Pick your Shmood!</h1>
+      <p>certified hits only* </p>
+      <p>click a button to generate a playlist</p>
+      <div class="row">
+        <div class="column">
+          <div class="col text-center">
+            <button type="button" onclick="loveButton()" class="btn btn-primary btn-lg btn-block" id="love button"
+              style="border-radius: 25px; color: white">Love</button>
+
+            <button type="button" onclick="saucyButton()" class="btn btn-primary btn-lg btn-block" id="saucy button"
+              style="border-radius: 25px; color: white">Saucy</button>
+
+            <button type="button" onclick="danceButton()" class="btn btn-primary btn-lg btn-block" id="dance button"
+              style="border-radius: 25px; color: white">Dance</button>
+
+            <button type="button" onclick="sadButton()" class="btn btn-primary btn-lg btn-block" id="sad button"
+              style="border-radius: 25px; color: white">Sad</button>
+
+            <button type="button" onclick="angryButton()" class="btn btn-primary btn-lg btn-block" id="angry button"
+              style="border-radius: 25px; color: white">Angry</button>
+          </div>
+        </div>
+        <div class="column">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Title</th>
+                  <th class="table-head">Artist</th>
+                  <th class="table-head">Year</th>
+                  <th class="table-head">Shmood</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- TOOK OUT THE TABLE BUT COULD BE USEFUL LATER. SO I LEFT IT COMMENTED OUT BUT STILL THERE. -->
+
+      <!-- <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div> -->
+
+    </div>
+  </div>
+  <footer class="footer">
+    <span class="bottom">Shmoody </span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+
+
+</body>
+
+</html>
