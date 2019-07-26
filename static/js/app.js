@@ -44,31 +44,151 @@ function loveButton() {
 
 
 function saucyButton() {
-    d3.event.preventDefault();
-
     d3.selectAll("td").remove();
-    console.log("Hello World");
+
+    var filteredData = tableData.filter(record => record.Schmood == 'saucy')
+
+    function random10(array) {
+
+        var test = array[Math.floor(Math.random() * array.length)];
+        return test; 
+        
+    }
+
+    var randomData = []; 
+    var i;
+    for (i = 0; i < 11; i++) {
+        random = random10(filteredData)
+        randomData = randomData.concat(random); 
+    }
+    
+    console.log(randomData)
+
+    randomData.forEach(function (randomData) {
+
+        // Append a row to the table body for every UFO report
+        var row = tbody.append("tr");
+
+        // For each pair of keys and values in each UFO report...
+        Object.entries(randomData).forEach(function ([key, value]) {
+
+            // Append a data column (cell) to the row and enter the corresponding value in each cell.
+            var cell = tbody.append("td");
+            cell.text(value);
+        });
+    });
+    console.log(randomData);
 };
 
 function danceButton() {
-    d3.event.preventDefault();
-
     d3.selectAll("td").remove();
-    console.log("Hello World");
+
+    var filteredData = tableData.filter(record => record.Schmood == 'dance')
+
+    function random10(array) {
+
+        var test = array[Math.floor(Math.random() * array.length)];
+        return test; 
+        
+    }
+
+    var randomData = []; 
+    var i;
+    for (i = 0; i < 11; i++) {
+        random = random10(filteredData)
+        randomData = randomData.concat(random); 
+    }
+    
+    console.log(randomData)
+
+    randomData.forEach(function (randomData) {
+
+        // Append a row to the table body for every UFO report
+        var row = tbody.append("tr");
+
+        // For each pair of keys and values in each UFO report...
+        Object.entries(randomData).forEach(function ([key, value]) {
+
+            // Append a data column (cell) to the row and enter the corresponding value in each cell.
+            var cell = tbody.append("td");
+            cell.text(value);
+        });
+    });
+    console.log(randomData);
 };
 
 function sadButton() {
-    d3.event.preventDefault();
-
     d3.selectAll("td").remove();
-    console.log("Hello World");
+
+    var filteredData = tableData.filter(record => record.Schmood == 'sad')
+
+    function random10(array) {
+
+        var test = array[Math.floor(Math.random() * array.length)];
+        return test; 
+        
+    }
+
+    var randomData = []; 
+    var i;
+    for (i = 0; i < 11; i++) {
+        random = random10(filteredData)
+        randomData = randomData.concat(random); 
+    }
+    
+    console.log(randomData)
+
+    randomData.forEach(function (randomData) {
+
+        // Append a row to the table body for every UFO report
+        var row = tbody.append("tr");
+
+        // For each pair of keys and values in each UFO report...
+        Object.entries(randomData).forEach(function ([key, value]) {
+
+            // Append a data column (cell) to the row and enter the corresponding value in each cell.
+            var cell = tbody.append("td");
+            cell.text(value);
+        });
+    });
+    console.log(randomData);
 };
 
 function angryButton() {
-    d3.event.preventDefault();
-
     d3.selectAll("td").remove();
-    console.log("Hello World");
+
+    var filteredData = tableData.filter(record => record.Schmood == 'angry')
+
+    function random10(array) {
+
+        var test = array[Math.floor(Math.random() * array.length)];
+        return test; 
+        
+    }
+
+    var randomData = []; 
+    var i;
+    for (i = 0; i < 11; i++) {
+        random = random10(filteredData)
+        randomData = randomData.concat(random); 
+    }
+    
+    console.log(randomData)
+
+    randomData.forEach(function (randomData) {
+
+        // Append a row to the table body for every UFO report
+        var row = tbody.append("tr");
+
+        // For each pair of keys and values in each UFO report...
+        Object.entries(randomData).forEach(function ([key, value]) {
+
+            // Append a data column (cell) to the row and enter the corresponding value in each cell.
+            var cell = tbody.append("td");
+            cell.text(value);
+        });
+    });
+    console.log(randomData);
 };
 
 
