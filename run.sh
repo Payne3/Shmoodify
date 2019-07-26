@@ -1,1 +1,1 @@
-FLASK_APP=UfO-Sightings/app.py flask run
+FLASK_APP=Shmoodify/app.py flask run
