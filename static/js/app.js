@@ -8,7 +8,7 @@ function loveButton() {
 
     d3.selectAll("td").remove();
 
-    var filteredData = tableData.filter(record => record.Schmood == 'love')
+    var filteredData = tableData.filter(record => record.Schmood == 'Love')
 
     function random10(array) {
 
@@ -46,7 +46,7 @@ function loveButton() {
 function saucyButton() {
     d3.selectAll("td").remove();
 
-    var filteredData = tableData.filter(record => record.Schmood == 'saucy')
+    var filteredData = tableData.filter(record => record.Schmood == 'Saucy')
 
     function random10(array) {
 
@@ -83,7 +83,7 @@ function saucyButton() {
 function danceButton() {
     d3.selectAll("td").remove();
 
-    var filteredData = tableData.filter(record => record.Schmood == 'dance')
+    var filteredData = tableData.filter(record => record.Schmood == 'Dance')
 
     function random10(array) {
 
@@ -120,7 +120,7 @@ function danceButton() {
 function sadButton() {
     d3.selectAll("td").remove();
 
-    var filteredData = tableData.filter(record => record.Schmood == 'sad')
+    var filteredData = tableData.filter(record => record.Schmood == 'Sad')
 
     function random10(array) {
 
@@ -157,7 +157,7 @@ function sadButton() {
 function angryButton() {
     d3.selectAll("td").remove();
 
-    var filteredData = tableData.filter(record => record.Schmood == 'angry')
+    var filteredData = tableData.filter(record => record.Schmood == 'Angry')
 
     function random10(array) {
 
