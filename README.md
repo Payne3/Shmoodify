@@ -1,2 +1,2 @@
 # Shmoodify
-An application to create a music playlist based on your schmood
+An application to create a music playlist based on your shmood
